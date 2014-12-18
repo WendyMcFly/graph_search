@@ -26,7 +26,7 @@ object Main {
      * from 0 to 1: 0-5-3-2-1
      * */
      val dfrom = 0
-     val dto = 5
+     val dto = 4
      val testDepthSearch = graph.depthSearch(dfrom, dto).toList.reverse
      print("Path from " + dfrom + " to " + dto + " by depth search: ")
      for (i <- testDepthSearch) {
@@ -47,7 +47,7 @@ object Main {
      print("\n")
 
      val bfrom = 0
-     val bto = 5
+     val bto = 4
      val testBroadSearch = graph.broadSearch(bfrom, bto).toList.reverse
      print("Path from " + bfrom + " to " + bto + " by broad search: ")
      for (i <- testBroadSearch) {
